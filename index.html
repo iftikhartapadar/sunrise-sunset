@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Sunrise/Sunset API</title>
+	<title>Sunrise/Sunset</title>
 
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,17 +14,28 @@
 
 <body>
 
+
 	<div class="container">
 		<h1>Today's Sunrise/Sunset</h1>
 		<div class="row" id="timeDisplay">
 			<div class="col-6">
-				<p id="sunrise">sunrise</p>
+				<p id="sunrise">Sunrise</p>
 			</div>
 			<div class="col-6">
-				<p id="sunset">sunset</p>
+				<p id="sunset">Sunset</p>
 			</div>
 		</div>
 	</div>
+	<br>
+	<div class="container">
+		<input type="text" class="form-control center" id="latSearch" placeholder="Enter Latitude ">
+		<br>
+		<input type="text" class="form-control" id="lngSearch" placeholder="Enter Longitude">
+		<br>
+		<button onclick= "search()" type="searchButton" class="btn btn-primary">Search</button>
+	</div>
+
+
 
 	<!--Bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

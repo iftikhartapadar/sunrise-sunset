@@ -1,5 +1,16 @@
+
+
+
+
+
+function search(){
+  
+let input1=document.getElementById('latSearch');
+let input2=document.getElementById('lngSearch');
 let request = new XMLHttpRequest();
-let url = "https://api.sunrise-sunset.org/json?lat=40.712776&lng=-74.005974";
+let url = "https://api.sunrise-sunset.org/json?lat=" + input1.value + "&lng=" + input2.value;
+
+
 
 request.open("GET", url, true);
 
@@ -26,4 +37,9 @@ function convertToEST(utc) {
     est += ":" + utcMinSec;
     
     return est;
+}
+
+
+
+
 }
